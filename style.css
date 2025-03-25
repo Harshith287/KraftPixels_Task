@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    padding:10px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.heading{
+    font-weight: bold;
+}
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color:gray;
+}
+.down-img{
+    width:10px;
+}
+.buttons{
+    display: flex;
+    gap:10px;
+    
+}
+.login{
+    background-color: white;
+    color:gray;
+    border:none;
+    padding:8px 10px;
+    border-radius:8px;
+}
+.btn{
+    cursor: pointer;
+}
+.signup
+{
+    background-color: rgb(79, 79, 202);
+    color:white;
+    border:none;
+    padding:8px 10px;
+    border-radius:8px;
+}
+.menu{
+    display:none;
+    cursor:pointer;
+    border:none;
+    background-color: white;
+}
+.menu img{
+    width:20px;
+}
+
+/* about us */
+.about-us-container
+{
+    margin-top:60px;
+
+}
+.about-us{
+    color:rgb(79, 79, 202);
+}
+.about-company{
+    margin-top:10px;
+}
+.about-us-container> .description{
+    margin-top:10px;
+    color:rgb(126, 123, 123);
+}
+
+
+
+@media (max-width:762px)
+{
+    .nav-links{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .stats-img{
+        order:2;
+    }
+    .stats-content{
+        order:1;
+    }
+    .stats-section{
+        flex-direction: column;
+    }
+
+    .stats-description{
+        display:block;
+    }
+}
+
+.stats-section{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding:20px;
+    gap:50px;
+    background-color:aliceblue;
+}
+.stats-content{
+    max-width:500px;
+}
+.stats-main{
+    color:rgb(79, 79, 202)
+}
+.stats-description{
+    margin-top:10px;
+    display:none
+} 
+.stats{
+    display:flex;
+    gap:40px;
+    flex-wrap: wrap;
+}  
+.stats h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(79, 79, 202)
+}
+.stat{
+    min-width:200px;
+}
+
